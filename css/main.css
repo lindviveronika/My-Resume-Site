@@ -1,0 +1,302 @@
+/* COLOR PALETTE
+F7F4EA - beige
+DED9E2 - light purple
+C0B9DD - purple
+80A1D4 - blue
+75C9C8 - green
+/*
+
+/*------------------------------------*\
+    #GENERIC
+\*------------------------------------*/
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+section {
+	text-align: center;
+}
+
+
+.section-heading {
+	display: block;
+	padding: 30px;
+}
+
+
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
+h1 {
+	font-family: 'Montserrat', sans-serif;	
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 0.2em;
+}
+
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 0.3em;
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 0.3em;
+}
+
+h4 {
+	font-family: 'Karla', sans-serif;
+}
+
+h5 {
+	font-family: 'Karla', sans-serif;
+	font-style: italic;
+	font-size: 13px;
+}
+
+
+
+/*------------------------------------*\
+    #NAV
+\*------------------------------------*/
+
+.nav-icon-wrapper {
+
+	width: 150px;
+	height: 100px;
+	line-height: 100px;
+}
+
+.nav-icon {
+	position: fixed;
+	right: 50px;
+	top:   25px;
+	display: block;
+	font-size: 30px;
+	line-height: 40px;
+	color: #DED9E2;
+	transition: transform 400ms;
+	z-index: 999;
+}
+
+.nav-links {
+	display: none;
+	position: fixed;
+	padding-top: 100px;
+	top: 0px;
+	right: 0px;
+	width: 250px;
+	text-align: center;
+	background-color: #DED9E2;
+	opacity: 0.9;
+	font-family: 'Karla', sans-serif;
+	text-transform: uppercase;	
+	letter-spacing: 0.2em;
+	line-height: 80px;
+	font-size: 16px;
+}
+
+.rotate {
+	transform: rotate(180deg);
+}
+
+@media screen and (max-width: 750px) {
+    .nav-icon {
+        right: 25px;
+    }
+}
+
+
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+.main-header {
+	position: fixed;
+	top:   0;
+	right: 0;
+	left:  0;
+	background-color: #FFF;
+	color: #333;
+	text-align: center;
+	line-height: 100px;
+	z-index: 10;
+} 
+
+
+
+
+
+/*------------------------------------*\
+    #ABOUT
+\*------------------------------------*/
+
+#about {
+	padding-top:    100px;
+	padding-bottom: 40px;
+	background-color: #80A1D4;
+	color: #FAFAFA;
+}
+
+.about-info {
+	width: 60%;
+	margin: auto;
+	padding: 20px;
+	background-color: #333;
+	color: #FAFAFA;
+	border-top: 15px solid #CCC;
+	border-radius: 5px 5px 0 0;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 13px;
+	line-height: 25px;
+	text-align: left;
+}
+
+.string {
+	color: #e6e670;
+}
+
+.integer {
+	color: #C0B9DD;
+}
+
+.symbol {
+	color: #e670ab;
+}
+
+.var {
+	color: #70e6e6;
+}
+
+.function-name {
+	color: #70e670;
+}
+
+.indented {
+	display: block;
+	margin-left: 20px;
+}
+
+@media screen and (max-width: 750px) {
+    .about-info {
+        width: 90%;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+    #RESUME
+\*------------------------------------*/
+
+#resume {
+	background-color: #F7F4EA;
+}
+
+.resume-wrapper {
+	width: 70%;
+	margin: auto;
+	text-align: left;
+	line-height: 20px;
+}
+
+.resume-wrapper p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	padding-top:    10px;
+	padding-bottom: 10px;
+}
+
+.resume-item {
+	padding-bottom: 40px;
+}
+
+.resume-heading {
+	border-bottom: 1px solid;
+	padding-bottom: 5px;
+	margin-bottom: 30px;
+}
+
+.technologies li {
+	font-family: 'Open Sans', sans-serif;
+	display: inline-block;
+	border: 1px solid #4C5364;
+	border-radius: 10px;
+	padding: 8px;
+	margin-bottom: 5px;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #PROJECTS
+\*------------------------------------*/
+
+#projects {
+	background-color: #75C9C8;
+	color: #FAFAFA;
+}
+
+.projects-wrapper { 
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.project-item {
+	background-color: #FFF;
+	border-radius: 5px;
+	color: #4C5364;
+	width: 500px;
+	margin-bottom: 40px;
+	padding: 30px;
+	padding-bottom: 10px;
+}
+
+.project-item img {
+	width: 100%;
+}
+
+.project-title {
+	margin-bottom: 20px;
+}
+
+.project-description {
+	font-family: 'Karla', sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	padding-bottom: 30px;
+	text-align: justify;
+}
+
+/*------------------------------------*\
+    #FOOTER
+\*------------------------------------*/
+
+.footer {
+	background-color: #FAFAFA;
+}
+
