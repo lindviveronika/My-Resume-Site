@@ -109,6 +109,7 @@ h5 {
 	letter-spacing: 0.2em;
 	line-height: 80px;
 	font-size: 16px;
+	z-index: 10;
 }
 
 .rotate {
@@ -267,13 +268,14 @@ h5 {
 }
 
 .project-item {
+	position: relative;
 	background-color: #FFF;
 	border-radius: 5px;
 	color: #4C5364;
 	width: 500px;
 	margin-bottom: 40px;
-	padding: 30px;
-	padding-bottom: 10px;
+	padding:        30px;
+	padding-bottom: 60px;
 }
 
 .project-item img {
@@ -284,13 +286,38 @@ h5 {
 	margin-bottom: 20px;
 }
 
-.project-description {
+.project-item p {
 	font-family: 'Karla', sans-serif;
 	font-size: 13px;
-	line-height: 18px;
-	padding-bottom: 30px;
 	text-align: justify;
+	line-height: 1.5;
+	padding-top:    10px;
+	padding-bottom: 10px;
 }
+
+
+.project-item a {
+	text-decoration: underline;
+}
+
+.project-item a:hover {
+	color: #C0B9DD;
+}
+
+.project-item .technologies {
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+	left: 0;
+}
+
+@media screen and (max-width: 450px) {
+    .project-item {
+        padding-bottom: 80px;
+    }
+}
+
+
 
 /*------------------------------------*\
     #FOOTER
