@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+	//REGISTER USERS IP ADRESS
+	$.get('php/counter.php');
+
 	//SHOW NAV ON CLICK
 	$('.nav-icon').click(function(){
 		$(this).toggleClass('rotate');
