@@ -12,9 +12,14 @@
 	  $ip=$_SERVER['REMOTE_ADDR'];
 	}
 
-	echo $ip;
+	$userAgent = $_SERVER['HTTP_USER_AGENT'];
 
-	$dbQuery = mysqli_query($connect,"INSERT INTO visitors(ip) VALUES('$ip')");
+	echo $ip;
+	echo $userAgent;
+
+	$dbQuery = mysqli_query($connect,"INSERT INTO visitors(ip,userAgent) VALUES('$ip','$userAgent')");
+
+	echo json_encode($dbQuery);
 
 	mysqli_close($connect);
 ?>
